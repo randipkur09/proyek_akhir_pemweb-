@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --accent-color: #f8f9fa;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.hero-image {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Card Styling */
+.card {
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid #e9ecef;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Button Styling */
+.btn-dark {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.btn-dark:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.btn-outline-dark {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Dashboard & Stats */
+.dashboard-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.stats-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Table Styling */
+.table th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+}
+
+/* Badge Status */
+.badge-pending {
+    background-color: #ffc107;
+}
+
+.badge-dikonfirmasi {
+    background-color: #198754;
+}
+
+.badge-selesai {
+    background-color: #6c757d;
+}
+
+.badge-dibatalkan {
+    background-color: #dc3545;
+}
+
+/* Form & Alert */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.alert-custom {
+    border-left: 4px solid var(--primary-color);
+    background-color: #f8f9fa;
+}
+
+/* Search Bar Enhancements */
+.input-group input[type="text"] {
+    border-right: 0;
+    border-color: #ced4da;
+}
+
+.input-group .btn {
+    border-left: 0;
+}
+
+.input-group input[type="text"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.15);
+}
